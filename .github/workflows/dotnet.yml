@@ -22,8 +22,6 @@ jobs:
         dotnet-version: | 
           3.1.x
           5.0.x
-    - name: Restore dependencies
-      run: dotnet restore
     - name: Build
       run: dotnet build --no-restore
     - name: Build exe file
